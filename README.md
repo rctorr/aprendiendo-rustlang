@@ -40,6 +40,7 @@ Para tener un poco más ordenados los ejemplo, voy a dividir en dos categorías,
 - super-practicas
 
 ## Recursos
-- https://www.rust-lang.org
-- https://doc.rust-lang.org/stable/book
-- http://rustbyexample.com
+- https://www.rust-lang.org Sitio oficial de Rust Lang
+- https://doc.rust-lang.org/stable/book Tutorial y/o Libro para aprender Rust Lang en inglés
+- http://rustbyexample.com Otro turorial en línea, no es necesario instalar nada
+- http://elusivecode.tumblr.com Blog creado por [Mario Martínez](https://twitter.com/aio00)
