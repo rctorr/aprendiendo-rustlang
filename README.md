@@ -36,7 +36,7 @@ La instalación se realizó de forma rápida y también es la versión 1.13.0, a
 ## Prácticas
 Para tener un poco más ordenados los ejemplo, voy a dividir en dos categorías, las `mini-practicas` donde cada archivo de código fuente por lo general muestra como usar o se enfoca en mostrar como usar alguna funcionalidad del lengujes Rust, también están las `super-practicas` donde habrá ejemplos de como resolver alguna problemática donde se involucran algoritmos, librerías o alguna otra herramienta que ayude a resolver el problema.
 
-- mini-practicas
+- [mini-practicas](mini-practicas/README.md)
 - super-practicas
 
 ## Recursos
