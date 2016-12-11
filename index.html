@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aprendiendo-rustlang by rctorr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Aprendiendo-rustlang</h1>
+      <h2 class="project-tagline">Prácticas realizadas para aprender y ensayar algunas características de Rust-Lang</h2>
+      <a href="https://github.com/rctorr/aprendiendo-rustlang" class="btn">View on GitHub</a>
+      <a href="https://github.com/rctorr/aprendiendo-rustlang/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/rctorr/aprendiendo-rustlang/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="aprendiendo-rust-lang" class="anchor" href="#aprendiendo-rust-lang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Aprendiendo Rust-Lang</h1>
+
+<p>Prácticas realizadas para aprender y ensayar algunas características de Rust-Lang</p>
+
+<h2>
+<a id="preparación-de-herramientas" class="anchor" href="#preparaci%C3%B3n-de-herramientas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preparación de herramientas</h2>
+
+<p>Para poder realizar las prácticas es sugerible contar con Rust instalado, en el sitio oficial existen descargas para almenos los principales sistemas operativos <a href="https://www.rust-lang.org/en-US/downloads.html">https://www.rust-lang.org/en-US/downloads.html</a></p>
+
+<p>No se en este momento si existan o se pueda compilar ejecutables para por ejemplo una Raspberry Pi, Arduino o plataformas distintas a las Intel PC compatibles (incluyendo Macs).</p>
+
+<h3>
+<a id="instalación-en-rhel-72" class="anchor" href="#instalaci%C3%B3n-en-rhel-72" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instalación en RHEL 7.2</h3>
+
+<p>Me imagino que la instalación tiene que ser imilar en CentOS 7, así como en Fedora, pero ha sido muy simple, sólo ejecutar el siguiente comando desde la terminal:</p>
+
+<div class="highlight highlight-text-shell-session"><pre># <span class="pl-s1">yum install rust</span>
+<span class="pl-mo">...</span>
+# <span class="pl-s1"><span class="pl-c1">exit</span></span>
+$ <span class="pl-s1">rustc --version</span>
+<span class="pl-mo">1.13.0</span>
+$</pre></div>
+
+<p>La versión 1.13.0 es la versión recomendada, así que ya podemos seguir ;)</p>
+
+<h3>
+<a id="instalación-en-linuxmint-171-rebecca" class="anchor" href="#instalaci%C3%B3n-en-linuxmint-171-rebecca" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instalación en Linuxmint 17.1 Rebecca</h3>
+
+<p>Contrario a lo que he supuesto, pensé que Rust se podría instalar con un simple <code>apt-get install</code> pero no ha sido así, al realizar la búsqueda de un paquete el resultado fué nulo y al buscar en google para instalar Rust en LinuxMint 17.1 no ha aparecido nada contundente, aunque sí algunos problemas con algunas librerías.</p>
+
+<p>Por lo tanto toca hacer la instalación usando el comando sugerido por si sitio de Rust...</p>
+
+<div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">curl -sSf https://static.rust-lang.org/rustup.sh <span class="pl-k">|</span> sh</span>
+<span class="pl-mo">...</span>
+<span class="pl-mo">    Rust is ready to roll.</span>
+
+$ <span class="pl-s1">rustc --version</span>
+<span class="pl-mo">rustc 1.13.0 (.... 2016-11-07)</span>
+$</pre></div>
+
+<p>La instalación se realizó de forma rápida y también es la versión 1.13.0, así que todo bien a codear ;)</p>
+
+<h2>
+<a id="prácticas" class="anchor" href="#pr%C3%A1cticas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prácticas</h2>
+
+<p>Para tener un poco más ordenados los ejemplo, voy a dividir en dos categorías, las <code>mini-practicas</code> donde cada archivo de código fuente por lo general muestra como usar o se enfoca en mostrar como usar alguna funcionalidad del lengujes Rust, también están las <code>super-practicas</code> donde habrá ejemplos de como resolver alguna problemática donde se involucran algoritmos, librerías o alguna otra herramienta que ayude a resolver el problema.</p>
+
+<ul>
+<li><a href="mini-practicas/README.md">mini-practicas</a></li>
+<li>super-practicas</li>
+</ul>
+
+<h2>
+<a id="recursos" class="anchor" href="#recursos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Recursos</h2>
+
+<ul>
+<li>
+<a href="https://www.rust-lang.org">https://www.rust-lang.org</a> Sitio oficial de Rust Lang</li>
+<li>
+<a href="https://doc.rust-lang.org/stable/book">https://doc.rust-lang.org/stable/book</a> Tutorial y/o Libro para aprender Rust Lang en inglés</li>
+<li>
+<a href="http://rustbyexample.com">http://rustbyexample.com</a> Otro turorial en línea, no es necesario instalar nada</li>
+<li>
+<a href="http://elusivecode.tumblr.com">http://elusivecode.tumblr.com</a> Blog creado por <a href="https://twitter.com/aio00">Mario Martínez</a>
+</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/rctorr/aprendiendo-rustlang">Aprendiendo-rustlang</a> is maintained by <a href="https://github.com/rctorr">rctorr</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
